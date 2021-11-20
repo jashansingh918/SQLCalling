@@ -1,0 +1,19 @@
+package JA3;
+import SqlBasics.ConnectionBase;
+import static SqlBasics.ConnectionBase.conn;
+import static SqlBasics.ConnectionBase.s;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class CallingInThisClass {
+    public static void main(String[] args) throws SQLException {
+//        ConnectionBase obj = new ConnectionBase();
+//        ConnectionBase.getConn();
+//        ConnectionBase.getS();
+       
+        //Statement s = conn.createStatement();
+        s.execute("create database Mango");
+        //s.execute("create database banana");
+    }
+    
+}
